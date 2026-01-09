@@ -253,25 +253,17 @@ a.whatsapp-contact:hover em {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	flex-wrap: wrap;
 }
 .banner-info {
-	width: 60%;
+	width: 50%;
 	padding-right: 50px;
 }
 .banner-img {
-	width: 40%;
-	/* border-radius: 20px;
-	background: var(--white);
-	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-	position: relative;
-	padding-bottom: 48%; */
+	width: 50%;
+	display: flex;
+	justify-content: center;
 }
 .banner-img img{
-	/* position: absolute;
-	width: 100%;
-	height: 100%;
-	object-fit: contain; */
 	display: block;
 }
 .banner-info h1 {
@@ -544,6 +536,7 @@ a.whatsapp-contact:hover em {
 .resume-content{
 	display: flex;
 	gap: 80px;
+	margin-bottom: 60px;
 }
 .resume-column{
 	position: relative;
@@ -588,6 +581,12 @@ a.whatsapp-contact:hover em {
 	font-weight: 700;
 	color: #000;
 	margin-bottom: 5px;
+}
+.resume-btn .theme-btn{
+	width: 100%;
+	max-width: 350px;
+	margin: 0 auto;
+	display: block;
 }
 /*Project Styles
 =================*/
@@ -769,19 +768,6 @@ a.whatsapp-contact:hover em {
 	position: relative;
 	padding-right: 25px;
 }
-/* .faq-head::after {
-	content: "";
-	position: absolute;
-	right: 0;
-	top: 50%;
-	transform: translate(0, -50%) rotate(45deg);
-	width: 15px;
-	height: 15px;
-	border: 2px solid var(--primary);
-	border-left: none;
-	border-top: none;
-	transition: 0.3s;
-} */
 .faq-head::after {
 	content: "";
 	position: absolute;
@@ -1136,11 +1122,6 @@ a.whatsapp-contact:hover em {
 	.banner-wrap{
 		padding: 130px 0 60px;
 	}
-	.banner-row{
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: column-reverse;
-	}
 	.banner-info{
 		width: 100%;
 	}
@@ -1175,6 +1156,14 @@ a.whatsapp-contact:hover em {
 	}
 }
 @media (max-width: 767px) {
+	.banner-wrap{
+		padding: 80px 0 60px;
+	}
+	.banner-row{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
+	}
 	.header-wrap{
 		padding: 16px 0;
 	}
