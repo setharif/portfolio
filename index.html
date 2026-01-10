@@ -395,45 +395,33 @@
 					<div class="field-box">
 						<label for="name">Name*</label>
 						<input type="text" id="name" name="name" placeholder="Enter your name" required>
-						<span class="error-message" id="name-error"></span>
 					</div>
 					<div class="field-box">
 						<label for="phone">Phone Number</label>
 						<input type="tel" id="phone" name="phone" placeholder="Enter your Phone Number">
-						<span class="error-message" id="phone-error"></span>
 					</div>
 					<div class="field-box email-box">
 						<label for="email">Email*</label>
 						<input type="email" id="email" name="email" placeholder="Enter your email" required>
-						<span class="error-message" id="email-error"></span>
 					</div>
 					<div class="field-box service-box">
 						<label for="service">Service*</label>
-							<select id="service" name="service" required="">
-								<option value="disabled selected hidden">Select a Service*</option>
-								<option value="web-development">Web Development</option>
-								<option value="ui-ux">UI/UX Design</option>
-								<option value="speed-optimization">Speed Optimization</option>
-								<option value="seo">SEO Services</option>
-								<option value="maintenance">Website Maintenance</option>
-								<option value="consultation">Consultation</option>
-								<option value="other">Other</option>
-							</select>
-						<span class="error-message" id="service-error"></span>
+						<select id="service" name="service" required="">
+							<option value="disabled selected hidden">Select a Service*</option>
+							<option value="web-development">Web Development</option>
+							<option value="ui-ux">UI/UX Design</option>
+							<option value="speed-optimization">Speed Optimization</option>
+							<option value="seo">SEO Services</option>
+							<option value="maintenance">Website Maintenance</option>
+							<option value="consultation">Consultation</option>
+							<option value="other">Other</option>
+						</select>
 					</div>
 					<div class="field-box message-area">
 						<label for="message">Message*</label>
 						<textarea id="message" name="message" rows="4" placeholder="Please describe your project or inquiry..." required></textarea>
-						<span class="error-message" id="message-error"></span>
 					</div>
-
-					<!-- Hidden fields for spam protection -->
-					<input type="hidden" name="form_type" value="contact_form">
-					<input type="hidden" name="timestamp" id="timestamp">
-					<input type="text" name="honeypot" class="honeypot" tabindex="-1" autocomplete="off">
-
 					<a href="#" type="submit" class="theme-btn form-btn" id="submitBtn">Submit</a>
-					<div id="formMessage" class="form-message"></div>
 				</form>
 			</div>
 		</div>
