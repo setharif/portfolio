@@ -805,7 +805,7 @@ a.whatsapp-contact:hover em {
 .field-box label {
 	margin-bottom: 8px;
 	border-radius: 4px;
-	font-size: 18px;
+	font-size: 1.125rem;
 	font-weight: 600;
 	color: var(--text);
 	display: block;
@@ -816,7 +816,7 @@ a.whatsapp-contact:hover em {
 	padding: 15px;
 	border-radius: 8px;
 	color: var(--text);
-	font-size: 16px;
+	font-size: 1rem;
 	font-weight: 400;
 	background-color: var(--white);
 	width: 100%;
@@ -1148,8 +1148,11 @@ a.whatsapp-contact:hover em {
 		padding-right: 0;
 		margin-bottom: 40px;
 	}
-	.theme-btn{
-		padding: 10px 22px;
+	.contact-wrap h2{
+		margin-bottom: 40px;
+	}
+	.field-box{
+		padding-bottom: 25px;
 	}
 	.faq-wrap,
 	.project-wrap,
@@ -1158,6 +1161,12 @@ a.whatsapp-contact:hover em {
 	.contact-wrap,
 	.about-wrap{
 		padding: 80px 0;
+	}
+	.theme-btn{
+		padding: 10px 22px;
+	}
+	.footer-wrap{
+		padding-top: 70px;
 	}
 	a.whatsapp-contact {
 		left: 20px;
@@ -1168,9 +1177,6 @@ a.whatsapp-contact:hover em {
 	}
 	.back-top.active {
 		bottom: 20px;
-	}
-	.footer-wrap{
-		padding-top: 70px;
 	}
 }
 @media (max-width: 767px) {
@@ -1208,6 +1214,17 @@ a.whatsapp-contact:hover em {
 	}
 	.portfolio-outer{
 		width: 50%;
+	}
+	.field-box label{
+		font-size: 1rem;
+	}
+	.contact-box{
+		padding: 25px;
+	}
+	.field-box input,
+	.field-box select,
+	.field-box textarea {
+		padding: 12px;
 	}
 	.faq-wrap,
 	.project-wrap,
@@ -1321,6 +1338,13 @@ a.whatsapp-contact:hover em {
 	}
 	.faq-info p{
 		margin-bottom: 0;
+	}
+	.field-box{
+		width: 100%;
+		padding-bottom: 15px;
+	}
+	.contact-box{
+		padding: 20px;
 	}
 	a.whatsapp-contact {
 		width: 40px;
