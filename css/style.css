@@ -272,7 +272,9 @@ a.whatsapp-contact:hover em {
 }
 .banner-row {
 	display: flex;
+	align-items: start;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 .banner-info {
 	width: 60%;
@@ -630,7 +632,7 @@ a.whatsapp-contact:hover em {
 /*Services Styles
 ==================*/
 .service-wrap {
-	padding: 80px 0;
+	padding: 120px 0;
 	background-color: var(--white);
 }
 .service-title h2 {
@@ -645,7 +647,7 @@ a.whatsapp-contact:hover em {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	margin: 0 -15px 40px;
+	margin: 0 -15px;
 }
 .service-cards:last-child {
 	margin-bottom: 0;
@@ -673,11 +675,9 @@ a.whatsapp-contact:hover em {
 }
 .service-card h3 {
 	color: var(--black);
-	font-size: 22px;
 }
 .service-card p{
 	color: var(--text);
-	font-size: 14px;
 	font-weight: 400;
 	margin-bottom: 0;
 }
@@ -692,7 +692,7 @@ a.whatsapp-contact:hover em {
 /*faq styles
 ==============*/
 .faq-wrap {
-	padding: 80px 0;
+	padding: 120px 0;
 	background-color: var(--light-purple);
 }
 .faq-row {
@@ -716,23 +716,20 @@ a.whatsapp-contact:hover em {
 }
 .faq-left p {
 	color: var(--text);
-	font-size: 16px;
 }
 .faqs {
 	width: 60%;
 	position: relative;
 }
 .faq-item {
-	cursor: pointer;
-	padding: 30px 40px;
-	position: relative;
-	overflow: hidden;
-	background-color: var(--white);
-	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-	border-radius: 10px;
+	margin-bottom: 0px;
+	border-radius: 12px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+	padding: 20px;
 	margin-bottom: 20px;
-	transition: 0.3s ease;
-	border-left: 4px solid transparent;
+	cursor: pointer;
+	border-left: 4px solid white;
+	background: white;
 }
 .faq-item:last-child{
 	margin-bottom: 0;
@@ -752,8 +749,8 @@ a.whatsapp-contact:hover em {
 	right: 0;
 	top: 50%;
 	transform: translate(0, -50%) rotate(45deg);
-	width: 14px;
-	height: 14px;
+	width: 12px;
+	height: 12px;
 	background: url('../images/cross-btn.webp') no-repeat center/ contain;
 	transition: 0.3s;
 }
@@ -762,7 +759,6 @@ a.whatsapp-contact:hover em {
 }
 .faq-head h3 {
 	color: var(--black);
-	font-size: 20px;
 	font-weight: 600;
 	margin-bottom: 0;
 }
@@ -776,7 +772,7 @@ a.whatsapp-contact:hover em {
 /*Contact Styles
 =================*/
 .contact-wrap {
-	padding: 80px 0;
+	padding: 120px 0;
 	background-color: var(--white);
 }
 .contact-wrap h2 {
@@ -877,7 +873,7 @@ a.whatsapp-contact:hover em {
 /*footer Styles
 ================*/
 .footer-wrap {
-	padding: 80px 0 40px;
+	padding-top: 80px;
 	background-color: rgb(153, 41, 241, 0.2);
 }
 .footer {
@@ -924,29 +920,29 @@ a.whatsapp-contact:hover em {
 .social-links a:hover i {
 	color: var(--primary);
 }
-.footer-col h3 {
-	font-size: 22px;
-}
 .footer-col li {
 	padding-bottom: 10px;
 }
 .footer-col li a {
-	font-size: 18px;
+	display: flex;
+	font-size: 1.15rem;
 	color: var(--black);
-	transition: 0.3s ease;
+	transition: 0.3s;
 }
 .footer-col li a:hover{
 	color: var(--primary);
 }
+.footer-links a{
+	border: 1px solid #000;
+}
 .footer-bottom{
 	text-align: center;
-	padding-top: 40px;
+	padding: 20px 0;
 	border-top: 1px solid var(--primary);
 	text-transform: uppercase;
 }
 .footer-bottom p{
 	margin-bottom: 0;
-	font-size: 18px;
 	color: var(--black);
 }
 .footer-bottom p span {
@@ -1027,9 +1023,6 @@ a.whatsapp-contact:hover em {
 	.header-menu li a{
 		padding: 10px 20px;
 	}
-	.banner-info h1 {
-		font-size: 36px;
-	}
 	.skills-row p, .contact-row p{
 		font-size: 16px;
 	}
@@ -1054,6 +1047,8 @@ a.whatsapp-contact:hover em {
 	.faq-wrap,
 	.project-wrap,
 	.portfolio-sec,
+	.service-wrap,
+	.contact-wrap,
 	.about-wrap{
 		padding: 100px 0;
 	}
@@ -1095,9 +1090,6 @@ a.whatsapp-contact:hover em {
 	}
 	.contact-btn {
 		margin: 0;
-	}
-	.theme-btn{
-		padding: 12px 20px;
 	}
 }
 @media (max-width: 991px) {
@@ -1162,8 +1154,23 @@ a.whatsapp-contact:hover em {
 	.faq-wrap,
 	.project-wrap,
 	.portfolio-sec,
+	.service-wrap,
+	.contact-wrap,
 	.about-wrap{
 		padding: 80px 0;
+	}
+	a.whatsapp-contact {
+		left: 20px;
+		bottom: 20px;
+	}
+	.back-top {
+		right: 20px;
+	}
+	.back-top.active {
+		bottom: 20px;
+	}
+	.footer-wrap{
+		padding-top: 70px;
 	}
 }
 @media (max-width: 767px) {
@@ -1202,17 +1209,47 @@ a.whatsapp-contact:hover em {
 	.portfolio-outer{
 		width: 50%;
 	}
-	.service-outer {
-		width: 100%;
-	}
 	.faq-wrap,
 	.project-wrap,
 	.portfolio-sec,
+	.service-wrap,
+	.contact-wrap,
 	.about-wrap{
 		padding: 60px 0;
 	}
 	.theme-btn {
 		font-size: 1rem;
+	}
+	a.whatsapp-contact {
+		width: 45px;
+		height: 45px;
+		left: 15px;
+		bottom: 15px;
+	}
+	a.whatsapp-contact img {
+		width: 45px;
+	}
+	.back-top {
+		right: 15px;
+	}
+	.back-top.active {
+		width: 45px;
+		height: 45px;
+		bottom: 15px;
+	}
+	.back-top::after {
+		width: 13px;
+		height: 13px;
+	}
+	.footer-wrap{
+		padding-top: 60px 0;
+	}
+	.footer-col-outer.w-50 {
+		max-width: 100%;
+		margin-bottom: 40px;
+	}
+	.footer-col-outer {
+		width: 50%;
 	}
 }
 @media (max-width: 575px) {
@@ -1245,16 +1282,17 @@ a.whatsapp-contact:hover em {
 		padding: 8px 10px;
 		letter-spacing: 0.1rem;
 	}
+	.theme-btn {
+		font-size: 0.875rem;
+	} 
 	.main-logo a{
 		font-size: 30px;
-	}
-	.theme-btn{
-		padding: 10px 15px;
-		letter-spacing: 1.6px;
 	}
 	.faq-wrap,
 	.project-wrap,
 	.portfolio-sec,
+	.service-wrap,
+	.contact-wrap,
 	.about-wrap {
 		padding: 40px 0;
 	}
@@ -1267,5 +1305,42 @@ a.whatsapp-contact:hover em {
 	}
 	.portfolio-outer:last-child {
 		padding-bottom: 0;
+	}
+	.service-outer {
+		width: 100%;
+	}
+	.faq-left {
+		margin-bottom: 30px;
+	}
+	h2.faq-title {
+		margin-bottom: 1.25rem;
+	}
+	.faq-item {
+		padding: 15px;
+		margin-bottom: 15px;
+	}
+	.faq-info p{
+		margin-bottom: 0;
+	}
+	a.whatsapp-contact {
+		width: 40px;
+		height: 40px;
+	}
+	a.whatsapp-contact img {
+		width: 40px;
+	}
+	.back-top.active {
+		width: 40px;
+		height: 40px;
+	}
+	.back-top::after {
+		width: 11px;
+		height: 11px;
+	}
+	.footer-wrap {
+		padding-top: 40px;
+	}
+	.footer-col li a {
+		font-size: 1rem;
 	}
 }
