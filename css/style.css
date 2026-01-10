@@ -383,11 +383,8 @@ a.whatsapp-contact:hover em {
 /*Portfolio Style
 =================*/
 .portfolio-sec{
-	padding: 80px 0;
+	padding: 120px 0;
 	background-color: var(--light-purple);
-}
-.portfolio-wrap {
-	padding: 150px 0 120px;
 }
 .lead-title,
 .portfolio-title {
@@ -401,6 +398,7 @@ a.whatsapp-contact:hover em {
 }
 .lead-title p {
 	color: var(--text);
+	margin-bottom: 0;
 }
 .portfolio-features {
 	display: flex;
@@ -467,8 +465,8 @@ a.whatsapp-contact:hover em {
 }
 .portfolio-info h3 {
 	color: var(--black);
-	font-size: 22px;
 	margin-bottom: 0;
+	font-weight: 500;
 }
 .portfolio-info p{
 	font-size: 16px;
@@ -575,8 +573,8 @@ a.whatsapp-contact:hover em {
 	margin: 0 auto;
 	display: block;
 }
-/*Project Styles
-=================*/
+/* Hire Me Styles
+==================== */
 .project-wrap {
 	padding: 120px 0;
 	background: url('../images/hire-img.jpg') no-repeat center/ cover;
@@ -600,18 +598,11 @@ a.whatsapp-contact:hover em {
 	z-index: 55;
 	color: var(--white);
 }
-.project-info h2,
 .project-info p {
 	color: var(--white);
 }
-.project-btn .theme-btn{
+.project-info .theme-btn {
 	animation: hithere 3s ease infinite;
-	background-color: var(--primary);
-	color: var(--white);
-}
-.project-btn .theme-btn:hover {
-	background-color: transparent;
-	color: var(--white);
 }
 @keyframes hithere {
 	0% {
@@ -1045,10 +1036,12 @@ a.whatsapp-contact:hover em {
 	.banner-bottom {
 		gap: 50px;
 	}
-	.skill-icons, .contact-icons{
+	.skill-icons,
+	.contact-icons{
 		gap: 12px;
 	}
-	.skill-icon, .contact-icon{
+	.skill-icon,
+	.contact-icon{
 		width: 35px;
 		height: 35px;
 	}
@@ -1060,8 +1053,8 @@ a.whatsapp-contact:hover em {
 	}
 	.faq-wrap,
 	.project-wrap,
-	.portfolio-wrap,
-	.about-wrap,{
+	.portfolio-sec,
+	.about-wrap{
 		padding: 100px 0;
 	}
 }
@@ -1142,7 +1135,12 @@ a.whatsapp-contact:hover em {
 	.about-info {
 		padding-left: 30px;
 	}
-	.portfolio-outer,
+	.portfolio-features {
+		margin: 0 -10px 30px;
+	}
+	.portfolio-outer {
+		padding: 0 10px 20px;
+	}
 	.service-outer {
 		width: 50%;
 	}
@@ -1160,6 +1158,12 @@ a.whatsapp-contact:hover em {
 	}
 	.theme-btn{
 		padding: 10px 22px;
+	}
+	.faq-wrap,
+	.project-wrap,
+	.portfolio-sec,
+	.about-wrap{
+		padding: 80px 0;
 	}
 }
 @media (max-width: 767px) {
@@ -1192,13 +1196,18 @@ a.whatsapp-contact:hover em {
 	.about-img{
 		margin-bottom: 20px;
 	}
-	.portfolio-outer,
+	.lead-title {
+		margin-bottom: 40px;
+	}
+	.portfolio-outer{
+		width: 50%;
+	}
 	.service-outer {
 		width: 100%;
 	}
 	.faq-wrap,
 	.project-wrap,
-	.portfolio-wrap,
+	.portfolio-sec,
 	.about-wrap{
 		padding: 60px 0;
 	}
@@ -1245,8 +1254,18 @@ a.whatsapp-contact:hover em {
 	}
 	.faq-wrap,
 	.project-wrap,
-	.portfolio-wrap,
+	.portfolio-sec,
 	.about-wrap {
 		padding: 40px 0;
+	}
+	.portfolio-features {
+		margin: 0 0 30px;
+	}
+	.portfolio-outer {
+		width: 100%;
+		padding: 0 0 15px;
+	}
+	.portfolio-outer:last-child {
+		padding-bottom: 0;
 	}
 }
