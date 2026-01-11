@@ -384,12 +384,14 @@ a.whatsapp-contact:hover em {
 }
 /*Portfolio Style
 =================*/
-.portfolio-sec{
+.portfolio-wrap{
 	padding: 120px 0;
 	background-color: var(--light-purple);
 }
-.lead-title,
-.portfolio-title {
+.portfolio-sec{
+	padding: 150px 0;
+}
+.lead-title{
 	width: 100%;
 	max-width: 600px;
 	text-align: center;
