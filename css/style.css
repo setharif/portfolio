@@ -1048,7 +1048,7 @@ a.whatsapp-contact:hover em {
 	}
 	.faq-wrap,
 	.project-wrap,
-	.portfolio-sec,
+	.portfolio-wrap,
 	.service-wrap,
 	.contact-wrap,
 	.about-wrap{
@@ -1158,7 +1158,7 @@ a.whatsapp-contact:hover em {
 	}
 	.faq-wrap,
 	.project-wrap,
-	.portfolio-sec,
+	.portfolio-wrap,
 	.service-wrap,
 	.contact-wrap,
 	.about-wrap{
@@ -1230,11 +1230,14 @@ a.whatsapp-contact:hover em {
 	}
 	.faq-wrap,
 	.project-wrap,
-	.portfolio-sec,
+	.portfolio-wrap,
 	.service-wrap,
 	.contact-wrap,
 	.about-wrap{
 		padding: 60px 0;
+	}
+	.portfolio-sec{
+		padding: 120px 0;
 	}
 	.theme-btn {
 		font-size: 1rem;
@@ -1309,7 +1312,7 @@ a.whatsapp-contact:hover em {
 	}
 	.faq-wrap,
 	.project-wrap,
-	.portfolio-sec,
+	.portfolio-wrap,
 	.service-wrap,
 	.contact-wrap,
 	.about-wrap {
