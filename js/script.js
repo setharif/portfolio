@@ -89,6 +89,13 @@ jQuery(document).ready(function($){
 			});
 		});
 	}
-	//Initialize AOS
-	AOS.init();
+	// Aos Animation
+	if ($("[data-aos]").length > 0) {
+		AOS.init({
+			duration: 1200,
+			delay: 300,
+			once: true,
+			disable: window.innerWidth < 768
+		});
+	}
 });
